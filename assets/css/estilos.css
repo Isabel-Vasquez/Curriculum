@@ -2,6 +2,11 @@ body {
 	font-family: 'Raleway', sans-serif;
 }
 
+/* Navbar */
+.navbar .container-fluid {
+	margin: 0 20px 0 50px;
+}
+
 /* Hero Section */
 
 #Hero-Section {
@@ -22,6 +27,25 @@ body {
 }
 .header-button-contactos {
 	background-color: #8e44ad;
+}
+.contacto {
+	display: flex;
+	justify-content: end;
+	gap: 20px;
+	color: white;
+}
+.icons {
+	margin-right: 10px;
+	color: #8e44ad;
+	font-size: 18px;
+}
+.contacto-link {
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+}
+.contacto-link:hover {
+	color: #8e44ad;
 }
 
 /* Sobre mi */
@@ -55,32 +79,16 @@ body {
 	justify-content: center;
 }
 
-/* Mis trabajos */
-
-#Mis-trabajos .image-top {
-	height: 200px;
-	background-repeat: no-repeat;
-	background-size: contain;
-}
 .mis-trabajos {
 	background-color: #8e44ad;
 }
-.card-button {
-	border: 1px solid #8e44ad;
-}
-.card-button:hover {
-	background-color: #8e44ad;
-	color: white;
-}
-
-/* Portafolio */
 
 .seccion-card {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-	min-height: 50vh;
+	min-height: 60vh;
 }
 
 .card {
@@ -163,4 +171,12 @@ body {
 
 .card:hover .back {
 	transform: perspective(600px) rotateY(360deg);
+}
+
+@media screen and (max-width: 1200px) {
+	.contacto {
+		display: flex;
+		flex-direction: column;
+		color: white;
+	}
 }

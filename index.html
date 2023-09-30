@@ -29,19 +29,20 @@
 
 	<body>
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-			<div class="container">
+			<div class="container-fluid">
 				<a class="navbar-brand fw-bold" href="#"> ISABEL VÁSQUEZ </a>
 				<button
 					class="navbar-toggler"
 					type="button"
 					data-bs-toggle="collapse"
-					aria-controls="navbarSupportedContent"
+					data-bs-target="#navbarNav"
+					aria-controls="navbarNav"
 					aria-expanded="false"
 					aria-label="Toggle navigation"
 				>
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
 						<li class="nav-item">
 							<a class="nav-link" href="#Acerca-de-mi">Acerca de mi</a>
@@ -67,17 +68,28 @@
 						Desarrolladora <br />
 						FullStack
 					</h1>
-					<p class="my-5">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-						accusamus iusto quibusdam dignissimos labore sequi. Cupiditate
-						reiciendis eius dolore.
-					</p>
+					<div class="contacto my-5">
+						<a
+							class="contacto-link"
+							href="https://github.com/Isabel-Vasquez/"
+							target="_blank"
+							><i class="fab fa-github icons"></i>Isabel-Vasquez</a
+						>
+						<a class="contacto-link" href="tel:+56953094639"
+							><i class="fas fa-mobile-alt icons"></i>+569 53094639</a
+						>
+						<a class="contacto-link" href="mailto:isabelvasquez.es88@gmail.com"
+							><i class="fas fa-envelope icons"></i
+							>isabelvasquez.es88@gmail.com</a
+						>
+						<span><i class="fas fa-map-marker-alt icons"></i>Chile</span>
+					</div>
 					<div class="mb-5 pb-5">
 						<a
-							class="btn btn-lg header-button-trabajos text-light me-4"
+							class="btn btn-lg header-button-trabajos text-light"
 							href="#Mis-trabajos"
 						>
-							Trabajos
+							Portafolio
 						</a>
 					</div>
 				</div>
@@ -93,7 +105,7 @@
 				investigando sobre el mundo de la Tecnología.
 			</p>
 
-			<div class="row">
+			<div class="row mx-2">
 				<div class="col-12 col-md-6">
 					<div class="text-center">
 						<i
@@ -107,25 +119,30 @@
 						<ul class="timeline-with-icons">
 							<li class="timeline-item mb-5">
 								<span class="timeline-icon"> </span>
+								<h4 class="fw-bold">Desafío Latam</h4>
+								<br />
+								<h5 class="fw-bold">Desarrollo Full Stack JavaScript</h5>
+								<p class="text-muted mb-2 fw-bold">2023-2024</p>
+								<p class="text-muted">
+									Quisque ornare dui nibh, sagittis egestas nisi luctus nec. Sed
+									aliquet laoreet sapien, eget pulvinar lectus maximus vel.
+									Phasellus suscipit porta mattis.
+								</p>
+							</li>
+							<li class="timeline-item mb-5">
+								<span class="timeline-icon"> </span>
 
-								<h5 class="fw-bold">Our company starts its operations</h5>
-								<p class="text-muted mb-2 fw-bold">11 March 2020</p>
+								<h4 class="fw-bold">Liceo Comercial Talagante</h4>
+								<h5 class="fw-bold">
+									<br />
+									Secretariado Ejecutivo con Administracion de Empresa
+								</h5>
+								<p class="text-muted mb-2 fw-bold">2001-2005</p>
 								<p class="text-muted">
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
 									necessitatibus adipisci, ad alias, voluptate pariatur officia
 									repellendus repellat inventore fugit perferendis totam dolor
 									voluptas et corrupti distinctio maxime corporis optio?
-								</p>
-							</li>
-
-							<li class="timeline-item mb-5">
-								<span class="timeline-icon"> </span>
-								<h5 class="fw-bold">First customer</h5>
-								<p class="text-muted mb-2 fw-bold">19 March 2020</p>
-								<p class="text-muted">
-									Quisque ornare dui nibh, sagittis egestas nisi luctus nec. Sed
-									aliquet laoreet sapien, eget pulvinar lectus maximus vel.
-									Phasellus suscipit porta mattis.
 								</p>
 							</li>
 						</ul>
@@ -142,8 +159,10 @@
 							<li class="timeline-item mb-5">
 								<span class="timeline-icon"> </span>
 
-								<h5 class="fw-bold">Our company starts its operations</h5>
-								<p class="text-muted mb-2 fw-bold">11 March 2020</p>
+								<h4 class="fw-bold">Ideal S.A</h4>
+								<br />
+								<h5 class="fw-bold">Maquinista Producción</h5>
+								<p class="text-muted mb-2 fw-bold">2016 - Actual</p>
 								<p class="text-muted">
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
 									necessitatibus adipisci, ad alias, voluptate pariatur officia
@@ -154,8 +173,10 @@
 
 							<li class="timeline-item mb-5">
 								<span class="timeline-icon"> </span>
-								<h5 class="fw-bold">First customer</h5>
-								<p class="text-muted mb-2 fw-bold">19 March 2020</p>
+								<h4 class="fw-bold">Hipermercado Tottus</h4>
+								<br />
+								<h5 class="fw-bold">Cajera</h5>
+								<p class="text-muted mb-2 fw-bold">2009 - 2015</p>
 								<p class="text-muted">
 									Quisque ornare dui nibh, sagittis egestas nisi luctus nec. Sed
 									aliquet laoreet sapien, eget pulvinar lectus maximus vel.
@@ -168,9 +189,8 @@
 			</div>
 		</section>
 
-		<section id="Mis-trabajos" class="my-5 p-5 mis-trabajos">
+		<section id="Mis-trabajos" class="p-5 mis-trabajos">
 			<h2 class="display-4 fw-bold text-center text-light mb-3">Portafolio</h2>
-
 			<div class="seccion-card">
 				<div class="card">
 					<div class="face front">
@@ -209,7 +229,6 @@
 				</div>
 			</div>
 		</section>
-
 		<footer class="bg-dark text-center text-light p-4">
 			<p class="mb-0">Isabel Vásquez 2023. Todos los derechos reservados.</p>
 		</footer>
