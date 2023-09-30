@@ -25,10 +25,8 @@ body {
 .header-button-trabajos:hover {
 	background-color: #8e44ad;
 }
-.header-button-contactos {
-	background-color: #8e44ad;
-}
-.contacto {
+
+.contact {
 	display: flex;
 	justify-content: end;
 	gap: 20px;
@@ -39,12 +37,12 @@ body {
 	color: #8e44ad;
 	font-size: 18px;
 }
-.contacto-link {
+.contact-link {
 	color: white;
 	text-decoration: none;
 	font-size: 18px;
 }
-.contacto-link:hover {
+.contact-link:hover {
 	color: #8e44ad;
 }
 
@@ -100,7 +98,7 @@ body {
 	border: none;
 }
 
-.card .face {
+.card .card-face {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -109,19 +107,19 @@ body {
 	transition: 0.5s;
 }
 
-.card .front {
+.card .card-front {
 	transform: perspective(600px) rotateY(0deg);
 	box-shadow: 0 5px 10px #000;
 }
 
-.card .front img {
+.card .card-front img {
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
 
-.card .front h3 {
+.card .card-front h3 {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
@@ -132,7 +130,7 @@ body {
 	text-align: center;
 }
 
-.card .back {
+.card .card-back {
 	transform: perspective(600px) rotateY(180deg);
 	background: #373a3c;
 	padding: 15px;
@@ -146,35 +144,35 @@ body {
 	justify-content: center;
 }
 
-.card .back .link {
+.card .card-back .link {
 	height: 50px;
 	line-height: 50px;
 }
 
-.card .back .link a {
+.card .card-back .link a {
 	color: #f3f3f3;
 }
 
-.card .back h3 {
+.card .card-back h3 {
 	font-size: 30px;
 	margin-top: 20px;
 	letter-spacing: 2px;
 }
 
-.card .back p {
+.card .card-back p {
 	letter-spacing: 1px;
 }
 
-.card:hover .front {
+.card:hover .card-front {
 	transform: perspective(600px) rotateY(180deg);
 }
 
-.card:hover .back {
+.card:hover .card-back {
 	transform: perspective(600px) rotateY(360deg);
 }
 
 @media screen and (max-width: 1200px) {
-	.contacto {
+	.contact {
 		display: flex;
 		flex-direction: column;
 		color: white;
